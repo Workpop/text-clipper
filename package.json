@@ -1,5 +1,5 @@
 {
-  "name": "text-clipper",
+  "name": "@workpop/text-clipper",
   "version": "1.2.0",
   "description": "Fast and correct clip functions for HTML and plain text.",
   "main": "dist/index.js",
@@ -7,7 +7,8 @@
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
     "lint": "eslint src tests/unit",
     "prepublish": "npm run build",
-    "test": "tape -r babel-register tests/unit/*.js | faucet"
+    "test": "tape -r babel-register tests/unit/*.js | faucet",
+    "release": "./release.sh"
   },
   "author": "Speakap B.V.",
   "keywords": [
@@ -28,6 +29,7 @@
     "faucet": "0.0.1",
     "glob": "^7.0.6",
     "prepush": "^3.1.11",
+    "standard-version": "^4.2.0",
     "tape": "^4.6.0"
   },
   "prepush": {
