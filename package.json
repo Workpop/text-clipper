@@ -8,7 +8,8 @@
     "lint": "eslint src tests/unit",
     "prepublish": "npm run build",
     "test": "tape -r babel-register tests/unit/*.js | faucet",
-    "release": "./release.sh"
+    "release": "./release.sh",
+    "tag-release": "standard-version"
   },
   "author": "Speakap B.V.",
   "keywords": [
